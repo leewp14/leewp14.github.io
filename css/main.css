@@ -206,7 +206,6 @@ th {
 }
 html {
   background-color: #fff;
-  background-image: url("../img/bg.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: auto;
@@ -216,6 +215,8 @@ html {
 }
 html.index {
   background-color: #fff;
+  background-image: url("/img/bg.jpg");
+  background-position: center bottom;
 }
 body {
   font-size: 14px;
@@ -574,12 +575,27 @@ video {
   margin: 0 auto;
   width: 700px;
 }
-.head,
-.foot {
+.head {
   padding: 0 50px;
   height: 120px;
   background-color: #399c9c;
   line-height: 120px;
+  box-sizing: border-box;
+}
+.head.index {
+  padding: 0 50px;
+  height: 120px;
+  background-color: rgba(0,0,0,0);
+  line-height: 120px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px #f0f0f0;
+  border: 1px solid rgba(255,255,255,0.7);
+}
+.foot {
+  padding: 0 50px;
+  height: 80px;
+  background-color: #399c9c;
+  line-height: 80px;
   box-sizing: border-box;
 }
 .head-title {
@@ -955,6 +971,7 @@ video {
     width: 100%;
   }
   .head,
+  .head.index,
   .foot {
     padding: 20px;
     height: auto;
@@ -981,12 +998,16 @@ video {
     margin: 0 5px;
     margin-left: 0;
   }
+  .excerpt {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
   .post {
     margin-top: 20px;
   }
   .post__head.archive,
   .post__head {
-    margin: 20px 5px;
+    margin: 15px 10px;
   }
   .post__main {
     margin: 20px 5px;
@@ -1007,6 +1028,7 @@ video {
   .post__foot {
     position: relative;
     padding: 10px;
+    padding-left: 20px;
   }
   .post__more {
     box-sizing: border-box;
