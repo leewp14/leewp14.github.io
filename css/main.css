@@ -214,7 +214,6 @@ html {
   text-rendering: optimizeLegibility;
 }
 html.index {
-  background-color: #fff;
   background-image: url("/img/bg.jpg");
   background-position: center bottom;
 }
@@ -237,6 +236,9 @@ samp {
 a {
   color: #258fb8;
   text-decoration: none;
+}
+#fullwidth {
+  width: 100%;
 }
 blockquote,
 dl,
@@ -629,6 +631,11 @@ video {
   font-size: 1.6rem;
   font-weight: normal;
 }
+.excerpt {
+  color: #c0c0c0;
+  margin-top: 0px;
+  margin-left: 1px;
+}
 .comments {
   margin: 30px 0;
   padding: 50px;
@@ -681,9 +688,6 @@ video {
 .post:hover {
   box-shadow: 0 1px 5px rgba(50,50,50,0.2);
   border-color: transparent;
-}
-.excerpt {
-  margin-top: 20px;
 }
 .reward {
   border: 1px solid #f0f0f0;
@@ -749,7 +753,7 @@ video {
   margin: 50px 0;
 }
 .post__main {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .post__main .headerlink {
   display: inline-block;
@@ -999,8 +1003,8 @@ video {
     margin-left: 0;
   }
   .excerpt {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: -5px;
+    margin-left: 6px;
   }
   .post {
     margin-top: 20px;
