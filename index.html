@@ -1,32 +1,43 @@
 <html lang="en">
 <head>
-    <script type="application/javascript">
+    <!-- Enforce HTTPS (only for GitLab Pages) -->
+    <!-- <script type="application/javascript">
         {
             var loc = window.location.href+'';
             if (loc.indexOf('http://')==0){
             window.location.href = loc.replace('http://','https://');}
         }
-    </script>
-    <link rel="icon" href="assets/img/favicon.png">
-    <title>Home - lee.wp14</title>
+    </script> -->
+    <!-- Meta Tags -->
+    <title>標哥</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Local Resources (personal)-->
+    <link rel="icon" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    </head>
-<body>
-    <div id="shadow">
-        <div id="main">
-            <img id="avatar" src="assets/img/avatar.png" alt="avatar">
-            <h1 id="name">lee.wp14</h1>
-            <nav>
-                <a class="link" href="blog/">Blog</a>
-                <a class="link" href="https://github.com/leewp14">GitHub</a>
-                <a class="link" href="https://www.fb.com/lee.wp14">Facebook</a>
-                <a class="link" href="mailto:lee.wp14@gmail.com">Mail</a>
-            </nav>
+    <script src="assets/js/main.js"></script>
+    <!-- Local Resources -->
+    <!-- Remote Resources -->
+</head>
+<body onload="setTimeout(hidesplash, 1000)">
+    <header id="header" class="center">
+        標哥
+        <div id="header-text-sub">对了 就是他</div>
+    </header>
+    <section id="section-1" class="center">
+        <div id="section-1-text-1">HIS WORK</div>
+        <div id="section-1-text-2">
+            <a href="//relifelab.gitlab.io" target="noopener" class="margin-10 href-no-deco hover-text-color transition">RELIFELAB</a>
+            <a href="blog" target="noopener" class="margin-10 href-no-deco hover-text-color transition">BLOG</a>
+            <a href="//rem-official.firebaseapp.com" target="noopener" class="margin-10 href-no-deco hover-text-color transition">REMOFFICIAL</a>
         </div>
+    </section>
+    <!-- <img src="https://i.loli.net/2018/05/15/5af9c144b7833.jpg"> -->
+    <div id="splash" class="splash center transition">
+        <div class="splash-progress" id="splash-progress-overlay"></div>
+        <div class="splash-progress"></div>
     </div>
+    <div id="message" class="message center transition"></div>
 </body>
 </html>

@@ -1,96 +1,126 @@
 html {
+    font-family: "Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 body {
-    position: relative;
-    padding: 0;
+    transition: all 0.4s ease-in-out;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    
-    font-family: 'Quicksand', sans-serif;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    color: #7c7b7b;
+    /* background: #181819; */
+    background: #e9e9f1;
 }
 
-#shadow {
-    background-color: rgba(0,0,0,.7);
-    width: 100%;
-    height: 100%;
-}
 
-#main {
+/* Global */
+.center{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 97%;
-    line-height: 30px;
-    cursor: default;
+    align-content: center;
 }
 
-#avatar {
-    margin-bottom: -17px;
-    border-radius: 50%;
-    width: 90px;
-    opacity: 0.92;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+.margin-10{
+    margin: 10px;
 }
 
-#name {
-    letter-spacing: .04em;
-    color: #d3d3d3;
-    font-size: 45px;
-}
-
-nav {
-    display: flex;
-}
-
-.link {
-    color: #a9a9a9;
-    letter-spacing: .1em;
-    font-size: 1.4em;
+.href-no-deco{
     text-decoration: none;
-    display: inline-flex;
-    padding: 0 .6em 0.7em;
-    justify-content: center;
-    transition: all .5s;
-    cursor: pointer;
+    color: inherit;
 }
 
-.link:hover {
-    color: #fff;
-    text-shadow: 0 0 2px #fff;
+.hover-text-color:hover{
+    color: #000;
 }
 
-@media only screen and (max-width:1023px) {
-    
-    #avatar {
-        margin-bottom: -20px;
-    }
-    
-    #name {
-        line-height: 50px
-    }
+.transition{
+    transition: all 0.4s ease-in-out;
 }
 
-@media only screen and (max-width: 767px) {
-    
-    #main {
-        height: 100%;
-    }
-    
-    #avatar {
-        margin-bottom: -25px;
-    }
-    
-    #name {
-        flex-direction: column;
-    }
-    
-    nav {
-        flex-direction: column;
-    }
+/* Header */
+#header{
+    top: 0;
+    color: black;
+    flex-direction: column;
+    width: 100vw;
+    height: 320px;
+    text-align: center;
+    font-size: 4.0em;
+    background-image: url(https://i.loli.net/2018/05/15/5af9d08952f98.jpg);
+    background-position: left top;
+    /* box-shadow: 0px 0px 0px 9px white inset; */
+}
+
+#header-text-sub{
+    opacity: 0.7;
+    padding-top: 22px;
+    font-size: 0.35em;
+}
+
+/* Section 1 */
+#section-1{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: calc(100% - 320px);
+}
+
+#section-1-text-1{
+    font-size: 0.74em;
+    text-decoration: underline;
+    transform: rotate(-90deg);    
+}
+
+#section-1-text-2{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Splash Screen */
+.splash{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #181819;
+    color: lightgray;
+}
+
+.splash-progress{
+    width: 240px;
+    height: 1px;
+    background: #1f1f1f;
+}
+
+#splash-progress-overlay{
+    position: fixed;
+    animation: flash 2s infinite;
+    background: darkgray;
+}
+
+/* Message Toast */
+.message{
+    opacity: 0;
+    padding-left: 50px;
+    font-size: 0.9em;
+    color: #7c7b7b;
+    position: fixed;
+    justify-content: left;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #191919;
+    box-shadow: 0px 0px 9px 2px black;
+}
+
+/* Animations */
+@keyframes flash{
+    from {opacity: 0}
+    48% {opacity: 1}
+    52% {opacity: 1}
+    to {opacity: 0}
 }
