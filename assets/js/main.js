@@ -51,7 +51,7 @@ function onload() {
     function hideSplash() {
         document.getElementById('splash').style.opacity = '0';
         document.getElementById('splash').style.pointerEvents = 'none';
-        document.getElementsByTagName('body')[0].style.overflow = '-webkit-paged-y';
+        document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
         document.getElementsByTagName('body')[0].style.overflowX = 'hidden';
     }
 
