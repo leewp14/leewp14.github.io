@@ -21,25 +21,36 @@
     <!-- Remote Resources -->
 </head>
 <body onload="onload()">
-    <header id="header" class="center transition" onclick="boo()">
-        標哥
-        <div id="header-text-sub">对了 就是他</div>
-    </header>
-    <section id="section-1" class="center">
-        <div id="section-1-text-1">HIS WORK</div>
-        <div id="section-1-text-2">
-            <a href="//relifelab.gitlab.io" target="noopener" class="margin-10 href-no-deco hover-text transition">RELIFELAB</a>
-            <a href="blog" class="margin-10 href-no-deco hover-text transition">BLOG</a>
-            <a href="//rem-official.firebaseapp.com" target="noopener" class="margin-10 href-no-deco hover-text transition">REMOFFICIAL</a>
-        </div>
-    </section>
-    <section id="section-2" class="center">
-        <!-- Image Gallery -->
-    </section>
+    <!-- Main Content -->
+        <!-- Header -->
+        <header id="header" class="center transition cursor-default">
+            標哥
+            <div id="header-text-sub">对了 就是他</div>
+        </header>
+
+        <!-- Section 1 : Navigation -->
+        <nav id="section-1" class="center">
+            <div id="section-1-text-1">
+                <a href="//relifelab.gitlab.io" target="noopener" class="margin-10 href-no-deco hover-text transition">RELIFELAB</a>
+                <a href="blog" class="margin-10 href-no-deco hover-text transition">BLOG</a>
+                <a href="//rem-official.firebaseapp.com" target="noopener" class="margin-10 href-no-deco hover-text transition">REMOFFICIAL</a>
+            </div>
+        </nav>
+
+        <!-- Section 2 : Image Gallery -->
+        <section id="section-2" class="center">
+            <!-- to be filled by js :) -->
+        </section>
+
+    <!-- End of Main Content -->
+
+    <!-- Components -->
     <div id="splash" class="splash center transition">
         <div class="splash-progress" id="splash-progress-overlay"></div>
         <div class="splash-progress"></div>
     </div>
     <div id="message" class="message center transition cursor-pointer" onclick="hideMessage()"></div>
+    <!-- End of Components -->
+
 </body>
 </html>
