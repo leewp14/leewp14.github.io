@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="transition">
 <head>
     <!-- Enforce HTTPS (only for GitLab Pages) -->
     <!-- <script type="application/javascript">
@@ -20,24 +20,26 @@
     <!-- Local Resources -->
     <!-- Remote Resources -->
 </head>
-<body onload="setTimeout(hidesplash, 1000)">
-    <header id="header" class="center">
+<body onload="onload()">
+    <header id="header" class="center transition" onclick="boo()">
         標哥
         <div id="header-text-sub">对了 就是他</div>
     </header>
     <section id="section-1" class="center">
         <div id="section-1-text-1">HIS WORK</div>
         <div id="section-1-text-2">
-            <a href="//relifelab.gitlab.io" target="noopener" class="margin-10 href-no-deco hover-text-color transition">RELIFELAB</a>
-            <a href="blog" class="margin-10 href-no-deco hover-text-color transition">BLOG</a>
-            <a href="//rem-official.firebaseapp.com" target="noopener" class="margin-10 href-no-deco hover-text-color transition">REMOFFICIAL</a>
+            <a href="//relifelab.gitlab.io" target="noopener" class="margin-10 href-no-deco hover-text transition">RELIFELAB</a>
+            <a href="blog" class="margin-10 href-no-deco hover-text transition">BLOG</a>
+            <a href="//rem-official.firebaseapp.com" target="noopener" class="margin-10 href-no-deco hover-text transition">REMOFFICIAL</a>
         </div>
     </section>
-    <!-- <img src="https://i.loli.net/2018/05/15/5af9c144b7833.jpg"> -->
+    <section id="section-2" class="center">
+        <!-- Image Gallery -->
+    </section>
     <div id="splash" class="splash center transition">
         <div class="splash-progress" id="splash-progress-overlay"></div>
         <div class="splash-progress"></div>
     </div>
-    <div id="message" class="message center transition"></div>
+    <div id="message" class="message center transition cursor-pointer" onclick="hideMessage()"></div>
 </body>
 </html>

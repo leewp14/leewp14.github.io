@@ -6,6 +6,8 @@ html {
 }
 
 body {
+    scroll-behavior: smooth;
+    overflow: hidden;
     transition: all 0.4s ease-in-out;
     width: 100vw;
     height: 100vh;
@@ -17,6 +19,11 @@ body {
 
 
 /* Global */
+::selection{
+    background: unset;
+    color: darkslategrey;
+}
+
 .center{
     display: flex;
     justify-content: center;
@@ -33,12 +40,17 @@ body {
     color: inherit;
 }
 
-.hover-text-color:hover{
+.hover-text:hover{
     color: #000;
+    text-decoration: underline;
 }
 
 .transition{
     transition: all 0.4s ease-in-out;
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }
 
 /* Header */
@@ -77,6 +89,25 @@ body {
 #section-1-text-2{
     display: flex;
     flex-direction: column;
+}
+
+/* Section 2 */
+#section-2{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: max-content;
+    width: 100%;
+}
+
+.section-2-child{
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center center;
+    width: 400px;
+    height: 400px;
 }
 
 /* Splash Screen */
