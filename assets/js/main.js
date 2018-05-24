@@ -1,6 +1,6 @@
 // Global Variables
     // Background Music
-    var bgMusicArray = ['http://m1.jixun.moe/459115868/320000/64e3f46d2c309c61c297eefb28b97dac433a9284021f8e637b5b103e7718adb2'];
+    var bgMusicArray = ['assets/audio/bgMusic-01.mp3'];
     var bgMusicLoop = false;
     // Image Gallery
     var imageGalleryArray = ['https://i.loli.net/2018/05/19/5affb6b7d8b51.jpg',
