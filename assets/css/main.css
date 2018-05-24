@@ -35,6 +35,10 @@ body {
     margin: 10px;
 }
 
+.no-click{
+    user-select: none;
+}
+
 .href-no-deco{
     text-decoration: none;
     color: inherit;

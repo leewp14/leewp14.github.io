@@ -1,4 +1,7 @@
 // Global Variables
+    // Background Music
+    var bgMusicArray = ['https://m1.jixun.moe/459115868/320000/64e3f46d2c309c61c297eefb28b97dac433a9284021f8e637b5b103e7718adb2'];
+    var bgMusicLoop = false;
     // Image Gallery
     var imageGalleryArray = ['https://i.loli.net/2018/05/19/5affb6b7d8b51.jpg',
                             'https://i.loli.net/2018/05/15/5af9c96fbb31e.jpg',
@@ -24,10 +27,29 @@
 function onload() {
     setTimeout(hideSplash, splashDelay);
     setTimeout(showMessage, messageDelay);
+    bgMusic();
     imageGallery();
 }
 
 // Functions
+    // Background Music
+    function bgMusic(){
+        var music = document.createElement('AUDIO');
+        if(bgMusicLoop){
+            music.setAttribute('loop','');
+        }
+        for(var i=0;i<bgMusicArray.length;i++){
+            var x = document.createElement('SOURCE');
+            x.setAttribute('src',bgMusicArray[i]);
+            x.setAttribute('type','audio/mpeg');
+            music.appendChild(x);
+        }
+        music.play().then(function(){
+            // console.log('music playback initiated');
+            // console.log('loop: ' + music.loop);
+        });
+    }
+
     // Image Gallery
     function imageGallery(){
         var gallery = [];
