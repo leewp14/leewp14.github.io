@@ -56,6 +56,7 @@ function onload() {
         for(var i=0;i<imageGalleryArray.length;i++){
             gallery.push('<div id="section-2-'+i+'" class="section-2-child transition" style="background-image:url('+imageGalleryArray[i]+')"></div>');
         }
+        gallery.push('<div class="center no-click" style="width:100%;text-align:center;">This is my image collection. All image displayed belongs to their respective owner. </div>')
         document.getElementById('section-2').innerHTML = gallery.join('\n');
         // if(imageGalleryAlignRight.length!=0){
         //     for(var image in imageGalleryAlignRight){
@@ -71,8 +72,8 @@ function onload() {
 
     // Splash
     function hideSplash() {
+        document.getElementById('splash').classList.add('unobstructive');
         document.getElementById('splash').style.opacity = '0';
-        document.getElementById('splash').style.pointerEvents = 'none';
         document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
         document.getElementsByTagName('body')[0].style.overflowX = 'hidden';
     }
@@ -80,11 +81,13 @@ function onload() {
     // Message
     function showMessage(cond) {
         document.getElementById('message').innerHTML = messageHead + messageContent;
+        document.getElementById('message').classList.remove('unobstructive');
         document.getElementById('message').style.opacity = '1';
         if(cond!='noTimeout'){
-            setTimeout(hideMessage, messageTimeout);
+            setTimeout(hideMessage, messageTimeout)
         }
     }
     function hideMessage() {
         document.getElementById('message').style.opacity = '0';
+        document.getElementById('message').classList.add('unobstructive');
     }

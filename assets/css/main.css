@@ -26,6 +26,7 @@ body {
 
 ::-webkit-scrollbar{
     width: 4px;
+    height: 4px;
     background: unset;
 }
 
@@ -50,6 +51,10 @@ body {
 
 .no-click{
     user-select: none;
+}
+
+.unobstructive{
+    pointer-events: none;
 }
 
 .href-no-deco{
@@ -101,13 +106,17 @@ body {
 
 /* Section 1 */
 #section-1{
+    overflow-x: scroll;
     justify-content: left;
     padding: 25px 50px;
+    align-items: flex-start;
 }
 
 #section-1-text-1{
     display: flex;
     flex-direction: column;
+    padding: 0px 14px 0px 0px;
+    align-items: flex-start;
 }
 
 /* Section 2 */
