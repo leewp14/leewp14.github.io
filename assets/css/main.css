@@ -24,6 +24,19 @@ body {
     color: darkslategrey;
 }
 
+::-webkit-scrollbar{
+    width: 4px;
+    background: unset;
+}
+
+::-webkit-scrollbar-thumb{
+    background: darkslategray;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: gray;
+}
+
 .center{
     display: flex;
     justify-content: center;

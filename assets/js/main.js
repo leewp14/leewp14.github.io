@@ -27,7 +27,7 @@
 function onload() {
     setTimeout(hideSplash, splashDelay);
     setTimeout(showMessage, messageDelay);
-    bgMusic();
+    //bgMusic();
     imageGallery();
 }
 
