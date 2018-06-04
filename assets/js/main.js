@@ -20,7 +20,7 @@
     // Message
     var messageDelay = '2400'
     var messageHead = '';
-    var messageContent = 'OHAIYO~ :3';
+    var messageContent = '<a href="https://github.com/upend/IF_MS_BUYS_GITHUB_IMMA_OUT" target="noopener" class="href-no-deco hover-text transition">IF_MS_BUYS_GITHUB_IMMA_OUT</a>';
     var messageTimeout = '6000';
 
 // onload
