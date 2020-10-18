@@ -106,7 +106,7 @@ body {
 
 /* Section 1 */
 #section-1{
-    overflow-x: scroll;
+    overflow-x: auto;
     justify-content: left;
     padding: 25px 50px;
     align-items: flex-start;
