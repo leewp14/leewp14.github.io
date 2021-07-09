@@ -1,7 +1,5 @@
 // Global Variables
-    // Background Music
-    var bgMusicArray = ['assets/audio/bgMusic-01.mp3'];
-    var bgMusicLoop = false;
+
     // Image Gallery
     var imageGalleryArray = ['https://i.loli.net/2018/05/19/5affb6b7d8b51.jpg',
                             'https://i.loli.net/2018/05/15/5af9c96fbb31e.jpg',
@@ -20,35 +18,18 @@
     // Message
     var messageDelay = '2400'
     var messageHead = '';
-    var messageContent = '<a href="https://github.com/upend/IF_MS_BUYS_GITHUB_IMMA_OUT" target="noopener" class="href-no-deco hover-text transition">IF_MS_BUYS_GITHUB_IMMA_OUT</a>';
+    var messageContent = '<a href="blog" target="noopener" class="href-no-deco hover-text transition">搭建了个typecho博客哟，点击我查看！</a>';
     var messageTimeout = '6000';
 
 // onload
 function onload() {
     setTimeout(hideSplash, splashDelay);
     //setTimeout(showMessage, messageDelay);
-    //bgMusic();
-    imageGallery();
+    //imageGallery();
 }
 
+
 // Functions
-    // Background Music
-    function bgMusic(){
-        var music = document.createElement('AUDIO');
-        if(bgMusicLoop){
-            music.setAttribute('loop','');
-        }
-        for(var i=0;i<bgMusicArray.length;i++){
-            var x = document.createElement('SOURCE');
-            x.setAttribute('src',bgMusicArray[i]);
-            x.setAttribute('type','audio/mpeg');
-            music.appendChild(x);
-        }
-        music.play().then(function(){
-            // console.log('music playback initiated');
-            // console.log('loop: ' + music.loop);
-        });
-    }
 
     // Image Gallery
     function imageGallery(){
